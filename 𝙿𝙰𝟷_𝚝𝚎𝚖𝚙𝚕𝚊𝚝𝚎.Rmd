@@ -1,5 +1,5 @@
 ---
-title: "Reproducible Research Project 1"
+title: "Reproducible Research PGA 1"
 author: "Pranav Narula"
 date: "02/05/2021"
 output:
