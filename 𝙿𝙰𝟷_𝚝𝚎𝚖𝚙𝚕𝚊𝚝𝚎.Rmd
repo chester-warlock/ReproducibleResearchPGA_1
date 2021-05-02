@@ -1,13 +1,13 @@
 ---
 title: "Reproducible Research Project 1"
-author: "Michael Galarnyk"
-date: "3/26/2017"
+author: "Pranav Narula"
+date: "02/05/2021"
 output:
   md_document:
     variant: markdown_github
 ---
 
-github repo for rest of specialization: [Data Science Coursera](https://github.com/mGalarnyk/datasciencecoursera)
+
 
 ## Introduction
 It is now possible to collect a large amount of data about personal movement using activity monitoring devices such as a Fitbit, Nike Fuelband, or Jawbone Up. These type of devices are part of the “quantified self” movement – a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks. But these data remain under-utilized both because the raw data are hard to obtain and there is a lack of statistical methods and software for processing and interpreting the data.
@@ -26,7 +26,7 @@ interval: Identifier for the 5-minute interval in which measurement was taken </
 The dataset is stored in a comma-separated-value (CSV) file and there are a total of 17,568 observations in this dataset. 
 
 ## Loading and preprocessing the data
-Unzip data to obtain a csv file.
+Here, we are Unzipping the data to obtain a csv file.
 
 ```{r}
 library("data.table")
@@ -37,7 +37,7 @@ download.file(fileUrl, destfile = paste0(getwd(), '/repdata%2Fdata%2Factivity.zi
 unzip("repdata%2Fdata%2Factivity.zip",exdir = "data")
 ```
 
-## Reading csv Data into Data.Table. 
+## Reading the csv Data into Data.Table. 
 ```{r}
 activityDT <- data.table::fread(input = "data/activity.csv")
 ```
